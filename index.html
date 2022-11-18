@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="select">Please select group:</p>
+    <script type="text/javascript">
+        var today = new Date();
+        var UpgradeDay = new Date("December 18, 2022");
+        var msPerDay = 24 * 60 * 60 * 1000;
+        var timeLeft = (UpgradeDay.getTime() - today.getTime());
+        var days = timeLeft / msPerDay;
+        var daysLeft = Math.floor(days);
+        var groupTwo = daysLeft + 2;
+        var groupThree = daysLeft + 5;
+        var groupFour = daysLeft + 8;
+        var groupFive = daysLeft + 10;
+    </script>
+    <button type="button" onclick='document.getElementById("select").innerHTML = "There are only<BR> <H4>" + daysLeft + " days </H4> Until Your Computer Upgrade<P>"'>Group 1</button>
+    <button type="button" onclick='document.getElementById("select").innerHTML = "There are only<BR> <H4>" + groupTwo + " days </H4> Until Your Computer Upgrade<P>"'>Group 2</button>
+    <button type="button" onclick='document.getElementById("select").innerHTML = "There are only<BR> <H4>" + groupThree + " days </H4> Until Your Computer Upgrade<P>"'>Group 3</button>
+    <button type="button" onclick='document.getElementById("select").innerHTML = "There are only<BR> <H4>" + groupFour + " days </H4> Until Your Computer Upgrade<P>"'>Group 4</button>
+    <button type="button" onclick='document.getElementById("select").innerHTML = "There are only<BR> <H4>" + groupFive + " days </H4> Until Your Computer Upgrade<P>"'>Group 5</button>
+</body>
+</html>
